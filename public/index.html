@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>金基私塾 · 金融市场基础知识</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect fill='%23141a16' width='64' height='64' rx='10'/><text x='32' y='44' text-anchor='middle' font-size='36' fill='%23d4b483'>金</text></svg>" />
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand" data-go="#/">
+        <div class="seal">金</div>
+        <div>
+          <div class="brand-name">金基私塾</div>
+          <div class="brand-sub">金融市场基础知识 · 仅本机</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#/" data-route="home">总览</a>
+        <a href="#/read" data-route="read">讲义</a>
+        <a href="#/practice" data-route="practice">刷题</a>
+        <a href="#/exam" data-route="exam">模考</a>
+        <a href="#/cards" data-route="cards">闪卡</a>
+        <a href="#/wrong" data-route="wrong">错题本</a>
+        <a href="#/fav" data-route="fav">收藏</a>
+        <a href="#/search" data-route="search">检索</a>
+      </nav>
+      <div class="side-stat" id="sideStat"></div>
+      <div class="side-foot">本地学习 · 请勿外传</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn" id="toggleSide" title="收起目录">☰</button>
+        <div class="crumb" id="crumb">总览</div>
+        <div class="top-actions">
+          <input class="search-mini" id="quickSearch" placeholder="检索知识点 / 题目…" />
+          <span class="pill" id="clockPill"></span>
+        </div>
+      </header>
+      <div class="view" id="view">
+        <div class="boot">正在装订讲义…</div>
+      </div>
+    </main>
+  </div>
+  <div class="lightbox" id="lightbox" hidden>
+    <img id="lightboxImg" alt="" />
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
